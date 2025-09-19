@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids UP 月次レポート</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Splash Page -->
+    <div id="splashPage" class="bg-orange-500 text-white h-screen flex flex-col items-center justify-center p-4">
+        <div class="flex flex-col items-center text-center">
+            <!-- Logo Section -->
+            <div class="max-w-2xl mb-12">
+                <!-- Kids UP Logo from the provided URL -->
+                <img src="https://pup.box.com/shared/static/7c41zrwq0pb4nwj8xeobeqn79nxcz02c.png" alt="Kids UP Logo" class="h-auto w-full md:w-3/4 mx-auto">
+            </div>
+            
+            <!-- Title and Button Section -->
+            <div class="flex flex-col md:flex-row items-center justify-between w-full max-w-2xl mb-16 px-4">
+                <div class="text-left mb-4 md:mb-0">
+                    <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-2">Jack's</h1>
+                    <h2 class="text-3xl md:text-4xl font-light tracking-wide">月次レポート</h2>
+                </div>
+                <button id="startButton" class="bg-white text-orange-500 font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-xl md:text-2xl">
+                    スタート
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agenda Page -->
+    <div id="agendaPage" class="bg-white text-black min-h-screen flex flex-col p-8">
+        <div class="max-w-5xl mx-auto w-full mt-12">
+            <!-- Japanese Agenda Title -->
+            <h1 class="text-4xl md:text-5xl font-bold mb-8 text-gray-800">議題</h1>
+            
+            <!-- Agenda Items -->
+            <ul class="list-disc list-outside space-y-12 pl-8">
+                <li>
+                    <p class="text-xl md:text-2xl font-medium">リーダーシップ継承：2025年度に10名の新リーダーを育成</p>
+                    <p class="text-base text-gray-500 mt-2">Leadership succession: Training 10 new leaders in FY2025</p>
+                    <a href="#leadershipSection" class="inline-block mt-4 bg-orange-500 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        詳細を見る
+                    </a>
+                </li>
+                <li>
+                    <p class="text-xl md:text-2xl font-medium">季節講習・イベントの売上実績</p>
+                    <p class="text-base text-gray-500 mt-2">Achievement of sales for Seasonal Schools & Events</p>
+                    <a href="#salesSection" class="inline-block mt-4 bg-orange-500 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        詳細を見る
+                    </a>
+                </li>
+                <li>
+                    <p class="text-xl md:text-2xl font-medium">ウェブサイト経由の説明会からの問い合わせが前年比120%増加：「費用を変えずに、デザインと表現で工夫を」</p>
+                    <p class="text-base text-gray-500 mt-2">Inquiries from setsumeikai through the website increased by 120% over last year: "Don't change the cost, but be creative with the design and presentation."</p>
+                    <a href="#inquiriesSection" class="inline-block mt-4 bg-orange-500 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        詳細を見る
+                    </a>
+                </li>
+                <li>
+                    <p class="text-xl md:text-2xl font-medium">ソーシャルネットワークからの応募数（ドライバー30名、バイリンガル30名）</p>
+                    <p class="text-base text-gray-500 mt-2">Number of applications from social networks (30 drivers, 30 bilingual)</p>
+                    <a href="#applicationsSection" class="inline-block mt-4 bg-orange-500 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                        詳細を見る
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Leadership Section -->
+    <div id="leadershipSection" class="bg-orange-100 text-black min-h-screen flex flex-col p-8 pt-6">
+        <div class="max-w-5xl mx-auto w-full">
+            <!-- Title and Navigation Buttons -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 md:mb-0 text-gray-800">リーダーシップ継承</h1>
+                <div class="flex space-x-4">
+                     <a href="#agendaPage" class="bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm md:text-base flex items-center">
+                        <i class="fa-solid fa-house mr-2"></i>議題
+                    </a>
+                    <a href="#salesSection" class="bg-orange-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm md:text-base flex items-center">
+                        <i class="fa-solid fa-arrow-right mr-2"></i>次
+                    </a>
+                </div>
+            </div>
+
+            <p class="text-lg md:text-xl font-medium text-gray-600 mb-4">2025年度に10名の新リーダーを育成</p>
+
+            <!-- Trainees Section -->
+            <div class="bg-white rounded-lg shadow-xl p-6 mb-8">
+                <h2 class="text-3xl font-bold mb-4 text-gray-700">研修中のリーダー</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="p-4 bg-gray-100 rounded-lg text-center shadow">
+                        <p class="text-xl font-semibold">Yuri Yakabi</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg text-center shadow">
+                        <p class="text-xl font-semibold">Hiscoe Shaun</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg text-center shadow">
+                        <p class="text-xl font-semibold">Akari Omura</p>
+                    </div>
+                    <div class="p-4 bg-yellow-300 rounded-lg text-center shadow">
+                        <p class="text-xl font-semibold">Arashi Kakegawa</p>
+                    </div>
+                    <div class="p-4 bg-yellow-300 rounded-lg text-center shadow">
+                        <p class="text-xl font-semibold">Jorge Salas</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg text-center shadow">
+                        <p class="text-xl font-semibold">Kaeden Herrold</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg text-center shadow">
+                        <p class="text-xl font-semibold">Niall Markey</p>
+                    </div>
+                    <div class="p-4 bg-gray-100 rounded-lg text-center shadow">
+                        <p class="text-xl font-semibold">Tami Nagahiro</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training Timeline -->
+            <div class="bg-white rounded-lg shadow-xl p-6 mb-8">
+                <h2 class="text-3xl font-bold mb-4 text-gray-700">研修と配属のタイムライン</h2>
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="w-full md:w-1/2 mb-4 md:mb-0">
+                        <p class="font-bold text-xl">研修期間</p>
+                        <p class="text-lg">第一ラウンド: 9月〜11月</p>
+                        <p class="text-sm text-red-500 font-bold mt-2">※LL（リーダー候補）に配属されるには、最終テストに合格する必要があります。</p>
+                    </div>
+                    <div class="w-full md:w-1/2 text-left md:text-right">
+                        <p class="font-bold text-xl">LL（リーダー候補）配属</p>
+                        <p class="text-lg">12月</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Efforts -->
+            <div class="bg-orange-200 rounded-lg shadow-inner p-6 mb-8">
+                <h2 class="text-2xl font-bold mb-2 text-orange-800">現在進行中の取り組み:</h2>
+                <p class="text-lg text-orange-700">私たちは積極的にリーダー候補を探しており、「追加の仕事量が割に合わない」と感じるという危機に直面しています。今月中に、全教育者に対し「リーダーとは何か」という公式な発表と職務詳細を伝えることを計画しています。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sales Section -->
+    <div id="salesSection" class="bg-white text-black min-h-screen flex flex-col p-8 pt-12">
+        <div class="max-w-5xl mx-auto w-full">
+             <!-- Title and Navigation Buttons -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 md:mb-0 text-gray-800">季節講習・イベントの売上実績</h1>
+                <div class="flex space-x-4">
+                    <a href="#leadershipSection" class="bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm md:text-base flex items-center">
+                        <i class="fa-solid fa-arrow-left mr-2"></i>前
+                    </a>
+                    <a href="#agendaPage" class="bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm md:text-base flex items-center">
+                        <i class="fa-solid fa-house mr-2"></i>議題
+                    </a>
+                    <a href="#inquiriesSection" class="bg-orange-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm md:text-base flex items-center">
+                        <i class="fa-solid fa-arrow-right mr-2"></i>次
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sales Data Table -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden mb-4">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left table-auto text-sm md:text-base">
+                        <thead>
+                            <tr class="bg-orange-500 text-white">
+                                <th class="p-2 md:p-4 font-bold">イベント名</th>
+                                <th class="p-2 md:p-4 font-bold text-right">目標</th>
+                                <th class="p-2 md:p-4 font-bold text-right">実績</th>
+                                <th class="p-2 md:p-4 font-bold text-right">達成率</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                <td class="p-2 md:p-4 font-semibold">MASCOT</td>
+                                <td class="p-2 md:p-4 text-right">¥7,410,000</td>
+                                <td class="p-2 md:p-4 text-right">¥7,538,000</td>
+                                <td class="p-2 md:p-4 text-right text-green-600 font-bold">101.73%</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                <td class="p-2 md:p-4 font-semibold">SCIENCE</td>
+                                <td class="p-2 md:p-4 text-right">¥9,358,000</td>
+                                <td class="p-2 md:p-4 text-right">¥8,755,550</td>
+                                <td class="p-2 md:p-4 text-right text-red-600 font-bold">93.56%</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                <td class="p-2 md:p-4 font-semibold">SUMMER</td>
+                                <td class="p-2 md:p-4 text-right">¥115,450,000</td>
+                                <td class="p-2 md:p-4 text-right">¥116,022,332</td>
+                                <td class="p-2 md:p-4 text-right text-green-600 font-bold">100.50%</td>
+                            </tr>
+                            <tr class="border-t-4 border-orange-500 bg-orange-100 font-bold">
+                                <td class="p-2 md:p-4">合計</td>
+                                <td class="p-2 md:p-4 text-right">¥132,218,000</td>
+                                <td class="p-2 md:p-4 text-right">¥132,315,882</td>
+                                <td class="p-2 md:p-4 text-right text-green-700">100.07%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Halloween Sub-Section -->
+            <div class="mb-4">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">ハロウィンパーティー 2025</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-orange-100 p-4 rounded-lg shadow-lg text-sm">
+                        <h3 class="text-xl font-bold mb-2 text-orange-800">参加者数 (Attendance)</h3>
+                        <ul class="space-y-1">
+                            <li class="flex justify-between items-center"><span class="font-semibold">内部生徒</span><span>1473</span></li>
+                            <li class="flex justify-between items-center"><span class="font-semibold">予約生徒</span><span>130</span></li>
+                            <li class="flex justify-between items-center"><span class="font-semibold">外部生徒</span><span>555</span></li>
+                            <li class="flex justify-between items-center font-bold text-lg mt-2 border-t pt-2 border-orange-300"><span class="font-semibold">合計</span><span>2158</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-100 p-4 rounded-lg shadow-lg text-sm">
+                        <h3 class="text-xl font-bold mb-2 text-green-800">収益 (Revenue)</h3>
+                        <ul class="space-y-1">
+                            <li class="flex justify-between items-center"><span class="font-semibold">会員からの収益</span><span>¥7,452,360</span></li>
+                            <li class="flex justify-between items-center"><span class="font-semibold">外部からの収益</span><span>¥2,473,550</span></li>
+                            <li class="flex justify-between items-center font-bold text-lg mt-2 border-t pt-2 border-green-300"><span class="font-semibold">合計収益</span><span>¥9,925,910</span></li>
+                        </ul>
+                        <div class="mt-2 bg-white p-2 rounded-lg text-center shadow">
+                            <p class="text-lg font-bold">目標達成率: <span class="text-green-600">80.89%</span></p>
+                            <p class="text-xs text-gray-500">(目標: ¥12,271,000)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Text Box before Spring School -->
+            <div class="bg-gray-100 rounded-lg shadow-inner p-6 mb-8">
+                <p class="text-lg text-gray-700">プロモーション資料は営業チームに予定よりも早く配布されており、計画は順調に進んでいます。現在、チョコパーティーの最終調整と春期講習の準備を進めています。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inquiries Section -->
+    <div id="inquiriesSection" class="bg-white text-black min-h-screen flex flex-col p-8 pt-12">
+        <div class="max-w-5xl mx-auto w-full">
+            <!-- Title and Navigation Buttons -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                <h1 class="text-3xl md:text-4xl font-bold mb-2 md:mb-0 text-gray-800">ウェブサイトからの問い合わせ</h1>
+                <div class="flex space-x-2">
+                    <a href="#salesSection" class="bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-xs md:text-sm flex items-center">
+                        <i class="fa-solid fa-arrow-left mr-1"></i>前
+                    </a>
+                    <a href="#agendaPage" class="bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-xs md:text-sm flex items-center">
+                        <i class="fa-solid fa-house mr-1"></i>議題
+                    </a>
+                    <a href="#applicationsSection" class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-xs md:text-sm flex items-center">
+                        <i class="fa-solid fa-arrow-right mr-1"></i>次
+                    </a>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+                    <h2 class="text-xl font-bold mb-1">3月</h2>
+                    <p class="text-3xl font-bold text-gray-800">255</p>
+                    <p class="text-sm text-red-600 font-bold">
+                        <i class="fa-solid fa-arrow-down mr-0.5"></i>
+                        -6.3%
+                    </p>
+                    <p class="text-xs text-gray-500 mt-0.5">2024</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+                    <h2 class="text-xl font-bold mb-1">4月</h2>
+                    <p class="text-3xl font-bold text-gray-800">234</p>
+                    <p class="text-sm text-green-600 font-bold">
+                        <i class="fa-solid fa-arrow-up mr-0.5"></i>
+                        18.8%
+                    </p>
+                    <p class="text-xs text-gray-500 mt-0.5">2024</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+                    <h2 class="text-xl font-bold mb-1">5月</h2>
+                    <p class="text-3xl font-bold text-gray-800">206</p>
+                    <p class="text-sm text-green-600 font-bold">
+                        <i class="fa-solid fa-arrow-up mr-0.5"></i>
+                        43.1%
+                    </p>
+                    <p class="text-xs text-gray-500 mt-0.5">2024</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+                    <h2 class="text-xl font-bold mb-1">6月</h2>
+                    <p class="text-3xl font-bold text-gray-800">222</p>
+                    <p class="text-sm text-red-600 font-bold">
+                        <i class="fa-solid fa-arrow-down mr-0.5"></i>
+                        -10.5%
+                    </p>
+                    <p class="text-xs text-gray-500 mt-0.5">2024</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+                    <h2 class="text-xl font-bold mb-1">7月</h2>
+                    <p class="text-3xl font-bold text-gray-800">190</p>
+                    <p class="text-sm text-gray-500 font-bold">
+                        0.0%
+                    </p>
+                    <p class="text-xs text-gray-500 mt-0.5">2024</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+                    <h2 class="text-xl font-bold mb-1">8月</h2>
+                    <p class="text-3xl font-bold text-gray-800">166</p>
+                    <p class="text-sm text-green-600 font-bold">
+                        <i class="fa-solid fa-arrow-up mr-0.5"></i>
+                        14.5%
+                    </p>
+                    <p class="text-xs text-gray-500 mt-0.5">2024</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+                    <h2 class="text-xl font-bold mb-1">9月</h2>
+                    <p class="text-3xl font-bold text-gray-800">129</p>
+                    <p class="text-sm text-red-600 font-bold">
+                        <i class="fa-solid fa-arrow-down mr-0.5"></i>
+                        -15.1%
+                    </p>
+                    <p class="text-xs text-gray-500 mt-0.5">2024</p>
+                </div>
+                
+                <!-- Horizontal Year-on-Year Data -->
+                <div class="bg-white rounded-lg shadow-xl p-4 col-span-1 md:col-span-2 lg:col-span-4">
+                    <h2 class="text-xl font-bold mb-2 text-gray-700 text-center">総計（3月〜9/19月）</h2>
+                    <div class="flex flex-col md:flex-row justify-around items-center space-y-2 md:space-y-0 md:space-x-2">
+                        <div class="bg-gray-100 p-3 rounded-lg shadow text-center flex-1">
+                            <h3 class="text-lg font-bold">2024年</h3>
+                            <p class="text-2xl font-bold text-gray-800">1,382</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg shadow text-center flex-1">
+                            <h3 class="text-lg font-bold">2025年</h3>
+                            <p class="text-2xl font-bold text-gray-800">1,382</p>
+                        </div>
+                        <div class="mt-2 p-3 rounded-lg shadow-inner bg-orange-100 text-center flex-1">
+                            <p class="text-lg font-bold">前年比</p>
+                            <p class="text-3xl font-bold text-green-600">3.8% <i class="fa-solid fa-arrow-up"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text box moved to bottom -->
+            <div class="bg-gray-100 rounded-lg shadow-inner p-4 mb-4">
+                <h2 class="text-xl font-bold mb-2 text-gray-800">ウェブコンバージョン改善の取り組み</h2>
+                <p class="text-base text-gray-700">毎日数時間かけてウェブデータの分析とコストをかけずにコンバージョンを改善する技術を研究しています。現在は、保護者様がランディング後に説明会を予約しない理由とその対策に注力しています。また、有料広告からのコンバージョンを向上させるために、ウェブフックの改善も行っています。これまでのところ、約4%の増加を達成していますが、15%の目標を達成するためには、もう一段の大きなブレークスルーが必要だと感じています。</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SNS Section -->
+    <div id="applicationsSection" class="bg-white text-black min-h-screen flex flex-col p-8 pt-12">
+        <div class="max-w-5xl mx-auto w-full">
+            <!-- Title and Navigation Buttons -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 md:mb-0 text-gray-800">ソーシャルネットワークからの応募</h1>
+                <div class="flex space-x-4">
+                    <a href="#inquiriesSection" class="bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm md:text-base flex items-center">
+                        <i class="fa-solid fa-arrow-left mr-2"></i>前
+                    </a>
+                    <a href="#agendaPage" class="bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm md:text-base flex items-center">
+                        <i class="fa-solid fa-house mr-2"></i>議題
+                    </a>
+                </div>
+            </div>
+
+            <!-- Summary and Strategy -->
+            <div class="bg-gray-100 rounded-lg shadow-inner p-6 mb-8">
+                <h2 class="text-2xl font-bold mb-2 text-gray-800">採用SNS戦略の概要</h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    合計で<span class="font-bold text-orange-500">12本の動画</span>を制作予定です。これらの動画は、日下係長と協力して、採用ターゲット層（スクールマネージャー、バイリンガル、バスドライバー）の心に響くように設計されました。
+                    現在、9本の動画を今月中に完成させる予定です。
+                </p>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">動画の内訳:</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>スクールマネージャー向け: <span class="font-bold">3本</span></li>
+                        <li>バイリンガル向け: <span class="font-bold">3本</span></li>
+                        <li>バスドライバー・バススタッフ向け: <span class="font-bold">6本</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TikTok Strategy -->
+            <div class="bg-white rounded-lg shadow-xl p-6 mb-8">
+                <h2 class="text-3xl font-bold mb-4 text-gray-700">TikTok戦略</h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    TikTokで最も重要なのは**コンテンツの質**です。ただ投稿するだけでなく、ユーザーに共感され、共有したくなるような動画を作成することが再生数増加の鍵となります。また、投稿時間も重要です。ターゲットユーザーが最もアクティブな時間帯（例：通勤・通学時間、ランチタイム、就寝前など）に投稿することで、より多くの視聴者にリーチできます。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- TikTok Preview -->
+                <div class="flex flex-col items-center">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800">TikTok</h2>
+                    <a href="https://www.tiktok.com/@kidsup_careers" target="_blank" class="block">
+                        <div class="relative w-72 h-96 bg-gray-900 rounded-2xl shadow-xl overflow-hidden">
+                            <img src="https://placehold.co/288x384/000000/FFFFFF?text=TikTok+Preview" alt="TikTok Mobile Preview" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i class="fa-solid fa-play text-white text-4xl opacity-70"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="text-center text-gray-600 mt-2">（上記画像をクリックしてTikTokアカウントを表示）</p>
+                </div>
+
+                <!-- Instagram Preview -->
+                <div class="flex flex-col items-center">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800">Instagram</h2>
+                    <a href="https://www.instagram.com/kidsup_careers/" target="_blank" class="block">
+                        <div class="relative w-72 h-96 bg-gray-900 rounded-2xl shadow-xl overflow-hidden">
+                            <img src="https://placehold.co/288x384/000000/FFFFFF?text=Instagram+Preview" alt="Instagram Mobile Preview" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i class="fa-solid fa-play text-white text-4xl opacity-70"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="text-center text-gray-600 mt-2">（上記画像をクリックしてInstagramアカウントを表示）</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('startButton').addEventListener('click', () => {
+            const agendaPage = document.getElementById('agendaPage');
+            agendaPage.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
